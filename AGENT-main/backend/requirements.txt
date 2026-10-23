@@ -1,0 +1,32 @@
+# FastAPI Engine Core Runtime
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+pydantic>=2.10.0
+python-multipart>=0.0.18
+
+# Distributed Caching & Token Rotation Engine
+redis>=5.0.0
+supabase>=2.10.0
+
+# Vector Database Infrastructures (Full Storage Engine Driver)
+chromadb>=0.6.3
+
+# System Localization Matrices
+langdetect>=1.0.9
+python-dotenv>=1.0.1
+
+# Text, PDF Parser & Web Core Assets
+pypdf>=5.0.0
+requests>=2.32.0
+typing-extensions>=4.12.0
+
+# Machine Learning & AI Inference APIs
+groq>=1.5.0
+tavily-python>=0.5.0
+
+# =====================================================================
+# CRITICAL NOTE: To maintain lightweight Railway Free Tier containers 
+# and eliminate Out-of-Memory (OOM) crashes, torch, transformers, and 
+# sentence-transformers have been offloaded to cloud API pipelines 
+# (HuggingFace Inference API). Local heavy wheels are removed.
+# =====================================================================
